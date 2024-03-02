@@ -44,6 +44,7 @@ window.addEventListener('load',updateScroll,false);
 window.addEventListener('scroll',init,false);
 window.addEventListener('resize',updateScroll,false);
 
+//experience
 
 
 //spotlight effect
@@ -56,4 +57,6 @@ function handleMouseMove(event) {
     spotlightEl.style.background = `radial-gradient(circle at ${clientX}px ${clientY}px, #00000000 10px, #011411 350px)`;
 }
 
-document.addEventListener("mousemove", handleMouseMove);
+document.addEventListener("mousemove", handleMouseMove)
+
+

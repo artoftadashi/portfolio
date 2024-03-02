@@ -10,11 +10,11 @@ html {
 
 body {
     margin: 0;
-    background-color: #121212 !important;
+    background-color: #E3E4E8 !important;
 }
 
 /* navigation bar */
-.nav {
+.navigation {
     display: flex;
     height: auto;
     justify-content: center;
@@ -93,12 +93,13 @@ body {
     transition: .3s;
 }
 
-.art-intro {
-    height: 90px;
-}
 
 
 /* gallery*/
+.art-intro {
+  height: 90px;
+}
+
   .gallery-track {
     position: fixed;
     display: grid;
@@ -187,6 +188,9 @@ body {
   }
 
 }
+
+
+/*spotlight effect*/
 
   #spotlight {
     position: fixed;
