@@ -242,6 +242,65 @@ body {
   margin-bottom: 20px;
 }
 
+/* education section */
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.education > h1 {
+  margin: 20px auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #AE57FE;
+}
+
+.education-container {
+  width: 70vw;
+  height: auto;
+  padding: 30px;
+  justify-content: space-between;
+  margin: auto;
+  border: 2px solid rgba(125,125,125,.17);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.education-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(174, 87, 254, 0.2), 0 6px 20px 0 rgba(174, 87, 254, 0.19);
+}
+
+.education-top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-left {
+  margin-bottom: 30px;
+}
+
+.education-left > h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 10px;
+  
+}
+
+.education-left > p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.education-date {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+
+/* badges */
 .badges {
   background: rgba(174, 87, 254, 0.7);
   border-radius: 50px;
