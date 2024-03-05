@@ -15,6 +15,7 @@ body {
 
 p {
   color: #fff;
+  opacity: 100%;
 }
 
 h1 {
@@ -217,7 +218,7 @@ h1 {
   padding: 30px;
   justify-content: space-between;
   margin: auto;
-  border: 2px solid rgba(125,125,125,.17);
+  border: 2px solid rgba(174, 87, 254, .3);
   background: #0a1020;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -273,7 +274,7 @@ h1 {
   padding: 30px;
   justify-content: space-between;
   margin: auto;
-  border: 2px solid rgba(125,125,125,.17);
+  border: 2px solid rgba(174, 87, 254, .3);
   background: #0a1020;
   border-radius: 10px;
   margin-bottom: 30px;
