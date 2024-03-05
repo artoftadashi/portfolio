@@ -247,7 +247,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .education > h1 {
@@ -299,6 +299,46 @@ body {
   font-weight: 400;
 }
 
+/* footer */
+footer {
+  height: auto;
+  margin: 60px auto 30px auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.socials > a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.socials, i:hover {
+  color: #AE57FE;
+  transition: .3s;
+}
+
+.socials, i {
+  color: #222;
+  font-size: 1.7rem;
+  transition: .3s;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.copyright, p {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
 
 /* badges */
 .badges {
@@ -341,4 +381,5 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
+    z-index: -999;
   }
