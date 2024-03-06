@@ -40,11 +40,6 @@ a {
     z-index: 1;
 }
 
-@media screen and (max-width: 991px) {
-    .nav-bar {
-        min-width: 80vw !important;
-    }
-}
 
 
 .nav-bar {
@@ -399,6 +394,55 @@ a {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
+
+/*RESPONSIVENESS STUFF*/
+@media screen and (max-width: 991px) {
+  .nav-bar {
+      min-width: 80vw !important;
+  }
+  /*projects section*/
+  .project-text > p {
+    width: 80vw;
+  }
+  .project-container {
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(174, 87, 254, 0.6), 0 3px 10px 0 rgba(174, 87, 254, 0.59);
+    opacity: 1;
+  }
+  .project-container:hover {
+    box-shadow: 0 2px 4px 0 rgba(174, 87, 254, 0.6), 0 3px 10px 0 rgba(174, 87, 254, 0.59);
+  }
+  .project-details {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-image-container {
+    margin-top: 30px;
+    width: 70vw;
+    height: 30vh;
+  }
+  .project-image-container > a > img {
+    width: 100vw;
+  }
+  .project-image-container > a > img:hover {
+    width: 120vw;
+  }
+  /*education section*/
+  .education-container {
+    width: 90vw;
+    box-shadow: 0 2px 4px 0 rgba(174, 87, 254, 0.6), 0 3px 10px 0 rgba(174, 87, 254, 0.59);
+    opacity: 1;
+  }
+  .education-container:hover {
+    box-shadow: 0 2px 4px 0 rgba(174, 87, 254, 0.6), 0 3px 10px 0 rgba(174, 87, 254, 0.59);
+  }
+  .education-top-row {
+    flex-direction: column-reverse;
+  }
+}
+
 
 /* footer */
 footer {
