@@ -426,7 +426,7 @@ a {
     height: 350px;
   }
   .project-image-container > a > img {
-    width: 150vw;
+    width: 160vw;
   }
   .project-image-container > a > img:hover {
     width: 170vw;
