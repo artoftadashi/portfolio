@@ -400,6 +400,8 @@ a {
   .nav-bar {
       min-width: 80vw !important;
   }
+
+
   /*projects section*/
   .project-text > p {
     width: 80vw;
@@ -429,6 +431,8 @@ a {
   .project-image-container > a > img:hover {
     width: 120vw;
   }
+
+
   /*education section*/
   .education-container {
     width: 90vw;
@@ -440,6 +444,27 @@ a {
   }
   .education-top-row {
     flex-direction: column-reverse;
+  }
+
+
+  /*experience section*/
+  .experience-container {
+    width: 90vw;
+    flex-direction: column;
+    box-shadow: 0 2px 4px 0 rgba(174, 87, 254, 0.6), 0 3px 10px 0 rgba(174, 87, 254, 0.59);
+    opacity: 1;
+  }
+  .experience-container:hover {
+    box-shadow: 0 2px 4px 0 rgba(174, 87, 254, 0.6), 0 3px 10px 0 rgba(174, 87, 254, 0.59);
+  }
+  .experience-right {
+    width: auto;
+  }
+
+
+  /*spotlight effect*/
+  #spotlight {
+    display: none;
   }
 }
 
