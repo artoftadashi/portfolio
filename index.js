@@ -62,4 +62,4 @@ document.addEventListener("mousemove", handleMouseMove)
 
 //copyright date
 const today = new Date().getFullYear();
-document.querySelector(".copyright-date").innerHTML = (" "+today);
+document.querySelector(".copyright-date").innerText = (" "+today);
