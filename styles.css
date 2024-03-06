@@ -426,10 +426,10 @@ a {
     height: 30vh;
   }
   .project-image-container > a > img {
-    width: 100vw;
+    width: 150vw;
   }
   .project-image-container > a > img:hover {
-    width: 120vw;
+    width: 170vw;
   }
 
 
