@@ -15,7 +15,7 @@ body {
 
 p {
   color: #fff;
-  opacity: 100%;
+  opacity: 1;
 }
 
 h1 {
@@ -494,6 +494,18 @@ a {
   }
 
 
+  /*About us page*/
+
+  .about-text {
+    width: 90vw;
+  }
+  .about-text > p {
+    font-size: 20px;
+  }
+  .bigg {
+    font-size: 25px;
+  }
+
   /*spotlight effect*/
   #spotlight {
     display: none;
@@ -542,6 +554,28 @@ footer {
   opacity: .6;
 }
 
+/*about page*/
+.about-text {
+  width: 80vw; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.about-text > p {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #AE57FE;
+}
+
+.bigg {
+  font-weight: 700;
+  font-size: 60px;
+  color: #fff;
+}
 
 /* badges */
 .badges {
