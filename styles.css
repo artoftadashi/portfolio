@@ -425,13 +425,13 @@ a {
   .project-image-container {
     margin-top: 30px;
     width: 70vw;
-    height: 350px;
+    height: 320px;
   }
   .project-image-container > a > img {
-    width: 160vw;
+    width: 170vw;
   }
   .project-image-container > a > img:hover {
-    width: 170vw;
+    width: 180vw;
   }
 
 
