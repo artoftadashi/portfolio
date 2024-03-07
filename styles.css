@@ -181,6 +181,7 @@ a {
 @media screen and (max-width: 991px) {
   .intro {
     width: 95vw !important;
+    height: 400px
   }
   
   .intro > img {
@@ -192,7 +193,7 @@ a {
   }
 
   .intro-text > p {
-    font-size: 10px;
+    font-size: 14px;
   }
 
 }
@@ -397,8 +398,15 @@ a {
 
 /*RESPONSIVENESS STUFF*/
 @media screen and (max-width: 991px) {
+  /*navigation bar*/
   .nav-bar {
       min-width: 80vw !important;
+  }
+
+
+  /*intro section*/
+  .intro {
+    margin
   }
 
 
