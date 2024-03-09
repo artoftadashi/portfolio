@@ -45,8 +45,25 @@ window.addEventListener('load',updateScroll,false);
 window.addEventListener('scroll',init,false);
 window.addEventListener('resize',updateScroll,false);
 
-//experience
-
+//animation on scroll
+// window.addEventListener('scroll', () => {
+//   let page = this;
+//   let pageTop = this.scrollY;
+//   let pageHeight = this.outerHeight / 2 ;
+  
+//   let frames = document.querySelectorAll('.project-container');
+//   frames.forEach( frame => {
+//     let frameTop = frame.offsetTop;
+//     let frameHeight = frame.offsetHeight;
+    
+//     if ( pageTop  >= frameTop - pageHeight &&
+//         pageTop  < frameTop + frameHeight/2 ){
+//       frame.classList.add('pro1');
+//     }else{
+//       frame.classList.remove('pro1');
+//     }
+//   });
+// });
 
 //spotlight effect
 

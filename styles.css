@@ -157,7 +157,31 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  animation-name: fade-in;
+  animation-duration: 4s;
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* @keyframes side-to-left-fade {
+  from {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    left: 0;
+    opacity: .6;
+  }
+} */
 
 .intro > img {
   width: 500px;
@@ -231,6 +255,13 @@ a {
   opacity: 1;
   box-shadow: 0 4px 8px 0 rgba(174, 87, 254, 0.7), 0 6px 20px 0 rgba(174, 87, 254, 0.69);
 }
+
+/*project section animations*/
+/* .pro1 {
+  animation-duration: .5s;
+  animation-name: side-to-left-fade;
+  animation-timing-function: ease-in;
+} */
 
 .project-details {
   display: flex;
