@@ -57,7 +57,7 @@ window.addEventListener('scroll', () => {
     let frameHeight = frame.offsetHeight;
     
     if ( pageTop  >= frameTop - pageHeight) {
-      frame.classList.add('pro1');
+      frame.classList.add('section-anim');
       setTimeout(() => {
         frame.style.opacity = "1"
       }, 1000);
