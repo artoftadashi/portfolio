@@ -198,7 +198,8 @@ a {
   align-items: center;
   margin: auto;
   animation-name: fade-in;
-  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-duration: 2.3s;
 }
 
 .intro-section > img {
@@ -225,6 +226,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: fade-in;
+  animation-timing-function: ease-in;
+  animation-duration: 1.7s;
 }
  
 .mouse-shape {
