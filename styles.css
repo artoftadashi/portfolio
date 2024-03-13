@@ -181,25 +181,34 @@ a {
   }
 }
 
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 .intro {
-  width: 60vw;
+  width: 70vw;
   height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto auto 60px auto;
+  margin: auto;
 }
 
 .intro-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: auto;
   animation-name: fade-in;
   animation-timing-function: ease-in;
   animation-duration: 2.3s;
+  width: 100%;
 }
 
 .intro-section > img {
@@ -250,11 +259,17 @@ a {
   position: relative;
 }
  
+.remove-scroll {
+  animation-name: fade-out;
+  animation-duration: .7s;
+  animation-timing-function: ease-out;
+}
 
 @media screen and (max-width: 991px) {
   .intro {
     width: 95vw !important;
-    height: 400px
+    height: 300px;
+    margin-top: 60px;
   }
   
   .intro-section > img {
@@ -568,9 +583,7 @@ a {
     width: auto;
   }
 
-
   /*About us page*/
-
   .about-text {
     width: 90vw;
   }

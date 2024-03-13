@@ -50,7 +50,8 @@ window.addEventListener('scroll', () => {
   let page = this;
   let pageTop = this.scrollY;
   let pageHeight = this.outerHeight / 2 ;
-  
+  let mouse = document.querySelector('.scroll-obj');
+
   let project = document.querySelectorAll('.add-anim');
     project.forEach( frame => {
     let frameTop = frame.offsetTop;
@@ -59,10 +60,14 @@ window.addEventListener('scroll', () => {
     if ( pageTop  >= frameTop - pageHeight) {
       frame.classList.add('section-anim');
       setTimeout(() => {
-        frame.style.opacity = "1"
+        frame.style.opacity = "1";
       }, 1000);
     }
   });
+  $('.scroll-obj').addClass('remove-scroll');
+  setTimeout(() => {
+    mouse.style.display = 'none';
+  }, 500);
 });
 
 //spotlight effect
@@ -81,3 +86,11 @@ document.addEventListener("mousemove", handleMouseMove)
 //copyright date
 const today = new Date().getFullYear();
 document.querySelector(".copyright-date").innerText = (" "+today);
+
+$( document ).ready(function() {
+  let pr= document.querySelector('.projects')
+  pr.classList.add('section-anim');
+  setTimeout(() => {
+    pr.style.opacity = "1";
+  }, 1000);
+});
