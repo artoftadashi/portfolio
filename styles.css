@@ -361,7 +361,7 @@ a {
 }
 
 .project-image-container > a > img {
-  width: 50vw;
+  width: 33rem;
   transition: .5s;
 }
 
@@ -387,7 +387,7 @@ a {
 }
 
 .project-image-container > a > img:hover {
-  width: 65vw;
+  width: 38rem;
   transition: .5s;
 }
 
@@ -541,12 +541,12 @@ a {
     height: 320px;
   }
   .project-image-container > a > img {
-    width: 170vw;
+    width: 44rem;
     -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
     filter: blur(2px);
   }
   .project-image-container > a > img:hover {
-    width: 180vw;
+    width: 48rem;
   }
 
   .project-image-container > .view-source-btn {
