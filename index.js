@@ -1,6 +1,49 @@
 
 //art page parallax effect.
+$(document).ready(function () {
+//animation on scroll
+window.addEventListener('scroll', () => {
+  let page = this;
+  let pageTop = this.scrollY;
+  let pageHeight = this.outerHeight / 2 ;
+  let mouse = document.querySelector('.scroll-obj');
 
+  let project = document.querySelectorAll('.add-anim');
+    project.forEach( frame => {
+    let frameTop = frame.offsetTop;
+    let frameHeight = frame.offsetHeight;
+    
+    if ( pageTop  >= frameTop - pageHeight) {
+      frame.classList.add('section-anim');
+      setTimeout(() => {
+        frame.style.opacity = "1";
+      }, 1000);
+    }
+  });
+  $('.scroll-obj').addClass('remove-scroll');
+  setTimeout(() => {
+    mouse.style.display = 'none';
+  }, 500);
+});
+
+//spotlight effect
+
+const spotlightEl = document.querySelector("#spotlight");
+
+function handleMouseMove(event) {
+    const { clientX, clientY } = event;
+    
+    spotlightEl.style.background = "radial-gradient(circle at "+ clientX +"px "+ clientY +"px, #101D3D 10px, #00000000 500px)";
+}
+
+document.addEventListener("mousemove", handleMouseMove)
+
+
+//copyright date
+const today = new Date().getFullYear();
+document.querySelector(".copyright-date").innerText = (" "+today);
+
+});
 const gallery = document.querySelector('.gallery');
 const track = document.querySelector('.gallery-track');
 const cards = document.querySelectorAll('.card');
@@ -45,47 +88,6 @@ window.addEventListener('load',updateScroll,false);
 window.addEventListener('scroll',init,false);
 window.addEventListener('resize',updateScroll,false);
 
-//animation on scroll
-window.addEventListener('scroll', () => {
-  let page = this;
-  let pageTop = this.scrollY;
-  let pageHeight = this.outerHeight / 2 ;
-  let mouse = document.querySelector('.scroll-obj');
-
-  let project = document.querySelectorAll('.add-anim');
-    project.forEach( frame => {
-    let frameTop = frame.offsetTop;
-    let frameHeight = frame.offsetHeight;
-    
-    if ( pageTop  >= frameTop - pageHeight) {
-      frame.classList.add('section-anim');
-      setTimeout(() => {
-        frame.style.opacity = "1";
-      }, 1000);
-    }
-  });
-  $('.scroll-obj').addClass('remove-scroll');
-  setTimeout(() => {
-    mouse.style.display = 'none';
-  }, 500);
-});
-
-//spotlight effect
-
-const spotlightEl = document.querySelector("#spotlight");
-
-function handleMouseMove(event) {
-    const { clientX, clientY } = event;
-    
-    spotlightEl.style.background = "radial-gradient(circle at "+ clientX +"px "+ clientY +"px, #101D3D 10px, #00000000 500px)";
-}
-
-document.addEventListener("mousemove", handleMouseMove)
-
-
-//copyright date
-const today = new Date().getFullYear();
-document.querySelector(".copyright-date").innerText = (" "+today);
 
 $( document ).ready(function() {
   let pr= document.querySelector('.projects')
@@ -94,3 +96,4 @@ $( document ).ready(function() {
     pr.style.opacity = "1";
   }, 1000);
 });
+
